@@ -1,0 +1,38 @@
+{
+  "name": "react-router4-example",
+  "version": "0.1.0",
+  "description": "Example app using React Router v4",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack && open index.html",
+    "build": "webpack",
+    "deploy": "surge -p $HOME/Sites/_playground/react-router4-example/build -d react-router4.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredwilli/react-router4-example"
+  },
+  "keywords": [
+    "react",
+    "react-router-4",
+    "react-router4",
+    "react-router",
+    "demo-app"
+  ],
+  "author": "Jared Williams <jaredwilli@gmail.com> (http://anti-code.com)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "surge": "^0.19.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.9.1"
+  }
+}
