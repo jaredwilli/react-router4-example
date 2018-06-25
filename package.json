@@ -8,7 +8,9 @@
     "watch": "webpack --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "deploy": "surge -p $HOME/Sites/_playground/react-router4-example/build -d react-router4.surge.sh"
+    "deploy": "surge -p $HOME/Sites/_playground/react-router4-example/build -d react-router4.surge.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "surge": "^0.19.0"
+    "surge": "^0.20.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -39,5 +42,6 @@
     "html-webpack-plugin": "^2.30.1",
     "webpack": "^3.9.1",
     "webpack-dev-server": "^2.9.5"
-  }
+  },
+  "snyk": true
 }
